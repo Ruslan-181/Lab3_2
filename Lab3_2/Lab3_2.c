@@ -10,10 +10,11 @@
 
 
 int main() {
+    //Локалізація
     SetConsoleOutputCP(CP_UTF8);
     SetConsoleCP(CP_UTF8);
     setlocale(LC_ALL, "uk_UA.UTF-8");
-
+    //Оголошення та ініціалізування змінних 
     double a = 1.0, b = 2.0;
     double eps = 0.00001;
     int max_iter = 10;
@@ -21,6 +22,7 @@ int main() {
     int debug = 0;
 
     while (1) {
+        //Вивід інтерфейсу
         printf("\n==================================================\n");
         printf("  f(x) = x^3 - x - 4 = 0  на проміжку [%.1f, %.1f]\n", a, b);
         printf("==================================================\n");
@@ -34,12 +36,14 @@ int main() {
         printf("Оберіть пункт: ");
 
 
-        
+        //Прохання обрати варіант та одразу валідація вибору 
         if (scanf("%d", &choice) != 1) {
             printf("Помилка вводу! Будь ласка, введіть число.\n");
             clear_input_buffer();
             continue;
         }
+
+
         system("cls");
         switch (choice) {
         case 1:
@@ -83,5 +87,6 @@ int main() {
 
         
     }
+
     return 0;
 }
