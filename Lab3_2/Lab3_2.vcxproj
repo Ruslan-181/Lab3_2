@@ -139,9 +139,9 @@
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Func.cpp" />
+    <ClCompile Include="Func.c" />
     <ClCompile Include="Func.h" />
-    <ClCompile Include="Lab3_2.cpp" />
+    <ClCompile Include="Lab3_2.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

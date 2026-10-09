@@ -15,13 +15,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Lab3_2.cpp">
+    <ClCompile Include="Lab3_2.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Func.h">
       <Filter>Header Files</Filter>
     </ClCompile>
-    <ClCompile Include="Func.cpp">
+    <ClCompile Include="Func.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
