@@ -9,7 +9,7 @@
 
 
 
-int main(void) {
+int main() {
     SetConsoleOutputCP(CP_UTF8);
     SetConsoleCP(CP_UTF8);
     setlocale(LC_ALL, "uk_UA.UTF-8");
@@ -33,13 +33,14 @@ int main(void) {
         printf("--------------------------------------------------\n");
         printf("Оберіть пункт: ");
 
-       
-        system("cls");
+
+        
         if (scanf("%d", &choice) != 1) {
             printf("Помилка вводу! Будь ласка, введіть число.\n");
             clear_input_buffer();
             continue;
         }
+        system("cls");
         switch (choice) {
         case 1:
             solve_bisection(a, b, eps, max_iter, debug);
@@ -78,7 +79,9 @@ int main(void) {
         default:
             printf("Некоректний вибір. Спробуйте ще раз.\n");
         }
-       
 
+
+        
+    }
     return 0;
 }
